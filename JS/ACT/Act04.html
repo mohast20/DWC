@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act04</title>
+
+    <script>
+            function calculate_perimeter_square(){
+            var side_lenght = prompt('Introduce side lenght: ');
+            var perimeter = parseInt(side_lenght)*4;
+    
+            document.write('The perimeter of square is: ' + perimeter + ' m.');
+    
+                }
+
+            function sum_product(){
+
+                var num1, num2, num3, num4, addition, product;
+
+                num1 = prompt('Number 1: ');
+                num2 = prompt('Number 2: ');
+                num3 = prompt('Number 3: ');
+                num4 = prompt('Number 4: ');
+
+                addition = parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4);
+                product = parseInt(num1)*parseInt(num2)*parseInt(num3)*parseInt(num4);
+
+                document.write('The addition of this numbers is: ' + addition + "</br>");
+                document.write('The product of this numbers is ' + product);
+            }
+
+            function calculate_bill(){
+
+                var price_p1, price_p2, quantity_p1, quantity_p2, bill1, bill2, total;
+
+                price_p1 = prompt('Introduce the price of product 1: ');
+                price_p2 = prompt('Introduce the price of product 2: ');
+                quantity_p1 = prompt('Introduce the quantity of product 1: ');
+                quantity_p2 = prompt('Introduce the quantity of product 2: ');
+                bill1 = parseFloat(price_p1)*parseFloat(quantity_p1);
+                bill2 = parseFloat(price_p2)*parseFloat(quantity_p2);
+                total = parseFloat(bill1)+parseFloat(bill2);
+
+                document.write(total + '€');
+
+            }
+
+            function calculate_area_triangle(){
+
+                var base, height, area;
+                base = prompt('Introduce base: ');
+                height = prompt('Introduce height: ');
+                area = (parseInt(base)*parseInt(height))/2;
+
+                document.write('The area of this triangle is: ' + area + ' m');
+            }    
+    
+                
+        </script>
+
+</head>
+<body>
+        <script>
+        //calculate_perimeter_square();
+        //sum_product();
+        //calculate_bill();
+        //calculate_area_triangle();  
+        </script>
+
+    
+
+
+
+
+</body>
+</html>
