@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act08</title>
+
+    <script>
+        
+        function christmas(){
+
+            var day = prompt('Enter day: ');
+            var month = prompt('Enter month: ');
+            var year = prompt('Enter year: ');
+
+            day = parseInt(day);
+            month = parseInt(month);
+            year = parseInt(year);
+
+            if(day == 25 && month == 12 && year == 2018){
+
+                document.write('Today is Christmas');
+            }else{
+
+                document.write('Today is not Christmas');
+            }
+        }
+
+        function less10(){
+
+            var num1 = prompt('Enter num1: ');
+            var num2 = prompt('Enter num2: ');
+            var num3 = prompt('Enter num3: ');
+
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            num3 = parseInt(num3);
+
+            if(num1 != num2 && num1 != num3){
+
+                if(num1 < 10 && num2 < 10 && num3 < 10){
+
+                    document.write('All the numbers are less than 10');
+                }
+            }
+        }
+
+        function point(){
+
+            var x = prompt('Enter coordinate point x: ');
+            var y = prompt('Enter coordinate point y: ');
+
+            x = parseInt(x);
+            y = parseInt(y);
+
+            if(x > 0 && y > 0){
+
+                document.write('First Quadrant');
+            
+            }else if(x < 0 && y > 0){
+
+                document.write('Second Quadrant');
+            
+            }else if(x < 0 && y < 0){
+
+                document.write('Third Quadrant');
+
+            }else{
+
+                document.write('Fourth Quadrant');
+
+            }
+        }
+
+        function salary(){
+
+            var w_salary = prompt("Enter the worker's salary: ");
+            var years = prompt('Enter years: ');
+            var new_salary;
+
+            w_salary = parseFloat(w_salary);
+            years = parseInt(years);
+            new_salary = parseFloat(new_salary);
+
+            if(w_salary < 500 && years >= 10){
+
+                new_salary = w_salary + (w_salary * 0.2);
+            
+            }else if(w_salary < 500 && years < 10){
+
+                new_salary = w_salary + (w_salary * 0.05);
+
+            }else if(w_salary >= 500){
+
+                new_salary = w_salary;
+
+            }
+
+            document.write('The salary of the next year will be: ' + new_salary + '€');
+
+        }
+
+        function less10_2(){
+
+            var num1 = prompt('Enter num1: ');
+            var num2 = prompt('Enter num2: ');
+            var num3 = prompt('Enter num3: ');
+
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            num3 = parseInt(num3);
+
+            if(num1 != num2 && num1 != num3){
+
+                if(num1 < 10 || num2 < 10 || num3 < 10){
+
+                    document.write('Some numbers are less than 10');
+                }
+            }
+
+        }
+
+    
+    </script>
+</head>
+<body>
+
+    <script>
+
+    //christmas();
+    //less10();
+    //point();
+    //salary();
+    less10_2();
+
+    </script>
+    
+</body>
+</html>
