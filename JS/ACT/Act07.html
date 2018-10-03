@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act07</title>
+
+    <script>
+
+            function biggest(){
+
+                var num1 = prompt('Enter num1: ');
+                var num2 = prompt('Enter num2: ');
+                var num3 = prompt('Enter num3: ');
+
+                var x = parseInt(num1);
+                var y = parseInt(num2);
+                var z = parseInt(num3);
+
+                if(x>y && x>z){
+                    document.write(x);
+                }else if(y>x && y>z){
+                    document.write(y);
+                }else{
+                    document.write(z);
+                }
+            }
+
+            function smallest(){
+                var num1 = prompt('Enter num1: ');
+                var num2 = prompt('Enter num2: ');
+                var num3 = prompt('Enter num3: ');
+
+                var x = parseInt(num1);
+                var y = parseInt(num2);
+                var z = parseInt(num3);
+
+                if(x<y && x<z){
+                    document.write(x);
+                }else if(y<x && y<z){
+                    document.write(y);
+                }else{
+                    document.write(z);
+                }
+
+            }
+
+            function digits(){
+
+                var num = prompt('Enter number between 0 and 999: ');
+
+                if(num>=0 && num<=999){
+
+                    var x = num.length;
+
+                    document.write(x);
+
+                }else{
+                    alert('Number must be between 0 and 999!');
+                }
+
+                
+            }
+
+            function positive(){
+
+                var num = prompt('Enter one number: ');
+                var x = parseInt(num);
+
+                if(x>0){
+
+                    document.write('Positive number');
+                }else if(x<0){
+
+                    document.write('Negative number');
+                }else{
+
+                    document.write('Zero');
+                }
+            }
+    
+    </script>
+</head>
+<body>
+
+    <script>
+        //biggest();
+        //smallest();
+        //digits();
+        positive();
+
+    </script>
+    
+</body>
+</html>
