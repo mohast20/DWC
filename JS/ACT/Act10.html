@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act10</title>
+    
+    <script>
+    
+        function one_50(){
+
+
+            var num = 1;
+            num = parseInt(num);
+
+            while(num <= 50){
+
+                document.write(num);
+                document.write(' ');
+                
+                num++;
+
+            }
+
+            document.write('</br>');
+
+            num = 50;
+            num = parseInt(num);
+
+            while(num >= 1){
+
+                document.write(num);
+                document.write(' ');
+
+                num--;
+            }
+
+            document.write('</br>');
+
+            num = (-50);
+            num = parseInt(num);
+
+            while(num <= 0){
+
+                document.write(num);
+                document.write(' ');
+
+                num++;
+            }
+
+        }
+
+        function pair(){
+
+
+            var n = 2;
+
+            while(n <= 100){
+
+                if(n % 2 == 0){
+
+                    document.write(n + ' ');
+                    
+                }
+
+                n++;
+
+            }
+
+        }
+
+        function serie(){
+
+
+            var x = 11;
+            var cont = 0;
+
+            x = parseInt(x);
+            cont = parseInt(cont);
+
+            while(cont < 25){
+
+                document.write(x + ' ');
+                cont++;
+                x+=11;
+                
+
+            }
+        }
+
+        function multiples(){
+
+            var y = 7;
+            y = parseInt(y);
+
+            while(y <= 70){
+
+                document.write(y + ' ');
+                y+=7;
+
+            }
+
+        }
+
+        function st_marks(){
+
+            var cont = 1;
+            var passed = 0;
+            var failed = 0;
+            var x;
+            x = parseInt(x);
+            passed = parseInt(passed);
+            failed = parseInt(failed);
+
+
+            while(cont <= 10){
+
+                x = prompt('Enter your mark: ');
+                
+                if(x >= 5 && x <= 10){
+                    passed++;
+
+                }else{
+                    failed++;
+                }
+
+                
+
+                cont++;
+
+            }
+
+            document.write('Students passed: ' + passed + '</br>');
+                document.write('Students failed: ' + failed + '</br>');
+
+        }
+
+
+        function height(){
+
+            var cont = 0;
+            var heights;
+            var new_height = 0;
+            var avg;
+            cont = parseInt(cont);
+            
+            new_height = parseInt(new_height);
+            avg = parseFloat(avg);
+
+
+            while(cont < 5){
+
+                heights = prompt('Enter your height: ');
+                heights = parseInt(heights);
+                new_height += heights;
+                
+                cont++;
+
+
+            }
+            avg = (new_height/5);
+            document.write('The average is: ' + avg + ' kg');
+
+
+        }
+
+        function salaries(){
+
+
+            var cont = 0;
+            var aux = 1;
+            var slr;
+            var x = 0;
+            var y = 0;
+            var sum = 0;
+
+
+            while(cont < 5){
+
+                slr = prompt('Enter worker ' + aux + ' salary: ');
+                slr = parseFloat(slr);
+                aux = parseInt(aux);
+                sum = parseInt(sum);
+                cont = parseInt(cont);
+                x = parseInt(x);
+                y = parseInt(y);
+
+                sum += slr;
+
+                aux++;
+
+                if(slr >= 500 && slr <= 1000){
+                    x++
+                }else if(slr > 1000){
+                    y++;
+                }
+
+                cont++;
+
+
+            }
+
+            document.write('Total workers salaries between 500€ and 1000€: ' + x + '</br>');
+            document.write('Total workers salaries are bigger than 1000€: ' + y + '</br>');
+            document.write('Total salaries: ' + sum + '€');
+
+            
+
+        }
+
+        function bigger_sum(){
+
+            var cont1 = 0;
+            var cont2 = 0;
+            var sum1 = 0;
+            var sum2 = 0;
+            var list1;
+            var list2;
+            var aux1 = 1;
+            var aux2 = 1;
+
+            while(cont1 < 3){
+
+                
+
+                list1 = prompt('Enter number (List 1) ' + aux1 + ': ');
+                
+                list1 = parseInt(list1);
+                cont1 = parseInt(cont1);
+                sum1 = parseInt(sum1);
+                
+                aux1 = parseInt(aux1);
+                aux1++;
+                sum1 +=list1;
+                
+                cont1++;
+
+            }
+
+            while(cont2 < 3){
+                
+
+                list2 = prompt('Enter number (List 2) ' + aux2 + ': ');
+                
+                list2 = parseInt(list2);
+                cont2 = parseInt(cont2);
+                sum2 = parseInt(sum2);
+                
+                aux2 = parseInt(aux2);
+                aux2++;
+                sum2 +=list2;
+                
+                cont2++;
+
+
+            }
+
+            if(sum1 > sum2){
+
+                document.write('List 1 has a bigger sum: </br>' + 'List 1: ' + sum1 + '</br>' + 'List 2: ' + sum2);
+            
+            }else if(sum2 > sum1){
+
+                document.write('List 2 has a bigger sum: </br>' + 'List 1: ' + sum1 + '</br>' + 'List 2: ' + sum2);
+
+            }else{
+
+                document.write('Both lists are equal');
+            }
+
+        }
+
+        function pair_odd(){
+
+
+            var pair = 0;
+            var odd = 0;
+            var cont = 1;
+            var num;
+
+            while(cont <= 5){
+
+                num = prompt('Enter number ' + cont);
+                num = parseInt(num);
+                cont = parseInt(cont);
+                pair = parseInt(pair);
+                odd = parseInt(odd);
+
+                if(num % 2 == 0){
+
+                    pair++;
+                }else{
+
+                    odd++;
+                }
+
+                cont++;
+
+            }
+
+            document.write('Pair: ' + pair + '</br>' + 'Odd: ' + odd);
+
+
+
+
+        }
+
+         
+    
+    
+    </script>
+
+</head>
+<body>
+
+    <script>
+        
+        //one_50();
+        //pair();
+        //serie();
+        //multiples();
+        //st_marks();
+        //height();
+        //salaries();
+        //bigger_sum();
+        pair_odd();
+    
+    </script>
+    
+</body>
+</html>
