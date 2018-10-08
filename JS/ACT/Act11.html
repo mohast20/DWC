@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act11</title>
+
+
+        <script>
+            
+            function pos_neg(){
+
+                var num;
+                var x = 0;
+
+
+                do{
+
+
+                    num = prompt('Enter one number: ');
+                    num = parseInt(num);
+                    x = parseInt(x);
+
+                    x += num;
+
+
+                }while(num != 9999);
+
+                    if(x == 0){
+
+                        document.write(x + '</br>' + 'Zero');
+                    }else if(x > 0){
+
+                        document.write(x + '</br>' + 'Positive');
+                    }else{
+
+                        document.write(x + '</br>' + 'Negative');
+                    }
+            }
+
+            function people(){
+
+                var id, age, sex, name;
+                var y = 0;
+                var cont = 0;
+                var m = 0;
+                var f = 0;
+                var m_more18 = 0;
+                var bigger_w = 0;
+                var n = '';
+                var youngest_m = 9999;
+                var i = 0;
+
+                do{
+
+                    name = prompt('Enter your name: ');
+
+                    id = prompt('Enter id number: ');
+
+                    id = parseInt(id);
+                    cont = parseInt(cont);
+
+                    
+
+                    age = prompt('Enter age: ');
+                    age = parseInt(age);
+                    
+                    sex = prompt('Enter sex(M/F): ');
+                    m_more18 = parseInt(m_more18);
+                    m = parseInt(m);
+                    f = parseInt(f);
+
+                    cont++;
+
+                    if(sex == 'M'){
+
+                        m++;
+                    }else if(sex == 'F'){
+
+                        f++;
+                    }if(sex == 'M' && age > 18 && age < 65){
+
+                        m_more18++;
+                    }if(sex == 'F' && age > bigger_w){
+
+                        bigger_w = age;
+                        n = name;
+                    }if(sex == 'M' && age < youngest_m){
+
+                        youngest_m = age;
+                        i = id;
+                    }
+
+
+                }while(id != 0);
+
+                document.write('How many people are there? ' + cont);
+                document.write('</br>');
+
+                document.write('How many men are there? ' + m);
+                document.write('</br>');
+
+                document.write('How many women are there? ' + f);
+                document.write('</br>');
+
+                document.write('How many men are between 18 and 65 years old? ' + m_more18);
+                document.write('</br>');
+
+                document.write('Bigger woman: ' + n + '. Age: ' + bigger_w);
+                document.write('</br>');
+
+                document.write('Youngest man: ' + i + '. Age: ' + youngest_m);
+
+            }
+
+            function bank(){
+
+                var a_number, name, money;
+                var cont = 0;
+                var sum = 0;
+
+                do{
+
+                    a_number = prompt('Enter your account number: ');
+                    a_number = parseInt(a_number);
+
+                    name = prompt('Enter your name: ');
+
+                    money = prompt('Enter your money: ');
+                    money = parseFloat(money);
+
+                    document.write(name + ' is the owner of ' + a_number + ' account number with ' + money + ' €.' );
+                    document.write('</br>');
+                    cont++;
+
+                    sum = parseInt(sum);
+
+                    sum += money;
+
+
+                }while(cont < 5);
+
+                document.write('</br>');
+
+                document.write('Total of all bank accounts: ' + sum + ' €.');
+
+
+            }
+            
+        
+        </script>
+
+</head>
+<body>
+
+    <script>
+        
+        //pos_neg();
+        people();
+        //bank();
+    
+    </script>
+    
+
+
+</body>
+</html>
