@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act13</title>
+
+    <script>
+        
+        function minimum(num1, num2, num3){
+
+            if (num1 < num2 && num1 < num3) {
+
+                document.write('Minimum: ' + num1);
+                
+            }else if (num2 < num1 && num2 < num3) {
+
+                document.write('Minimum: ' + num2);
+                
+            }else if (num3 < num1 && num3 < num2) {
+                
+                document.write('Minimum: ' + num3);
+
+            }
+
+
+        }
+
+        function order(num1, num2, num3){
+
+            if (num1 <= num2 && num1 <= num3 && num2 <= num3) {
+
+                document.write(num1 + ' < ' + num2 + ' < ' + num3);
+
+            }else if (num2 <= num1 && num2 <= num3 && num1 <= num3) {
+
+                document.write(num2 + ' < ' + num1 + ' < ' + num3);
+
+            }else if (num3 <= num1 && num3 <= num2 && num1 <= num2) {
+
+                document.write(num3 + ' < ' + num1 + ' < ' + num2);
+                
+            }else if (num1 <= num2 && num1 <= num3 && num2 >= num3) {
+                
+                document.write(num1 + ' < ' + num3 + ' < ' + num2);
+
+            }else if (num1 >= num2 && num2 <= num3 && num1 <= num3) {
+
+                document.write(num2 + ' < ' + num1 + ' < ' + num3);
+                
+            }else if (num1 >= num2 && num2 >= num3 && num1 >= num3) {
+                
+                document.write(num3 + ' < ' + num2 + ' < ' + num1);
+
+            }
+
+        }
+
+        function square(side){
+
+            side = parseInt(side);
+
+            var x = side*4;
+
+            document.write('Perimeter: ' + x);
+
+        }
+
+        function getDigits(num){
+
+            
+            var digits = num.toString().length;
+
+            document.write(digits);
+
+        }
+
+        function avg(num1, num2, num3){
+
+            var average = (num1 + num2 + num3)/3;
+
+            document.write(average);
+
+        }
+
+        function sum(n1, n2, n3, n4, n5){
+
+            var s = n1 + n2 + n3 + n4 + n5;
+            document.write('Total: ' + s);
+
+        }
+    
+    </script>
+
+</head>
+<body>
+
+    <script>
+    
+        //minimum(5, 2, 0);
+        //order(3, 4, 2);
+        //square(5);
+        //getDigits(55567);
+        //avg(5,6,7);
+        sum(10,20,30,40,50);
+
+
+    
+    </script>
+
+    
+</body>
+</html>

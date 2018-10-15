@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act05</title>
+
+    <script>
+        
+        function avg(){
+
+            var name = prompt('Enter your name: ');
+            var mark1 = prompt('Enter mark 1: ');
+            var mark2 = prompt('Enter mark 2: ');
+            var mark3 = prompt('Enter mark 3: ');
+            var avg = (parseInt(mark1)+parseInt(mark2)+parseInt(mark3))/3;
+
+            if(avg >=5){
+                document.write('Congratulations ' + name + '! You pass de exam');
+                document.write('</br>');
+                document.write('Your average is: ' + avg);
+            }
+
+        }
+
+        function email(){
+
+            var email1 = prompt('Enter email1: ');
+            var email2 = prompt('Enter email 2: ');
+
+            if(email1.localeCompare(email2) == 0){
+                document.write('Emails are equal!');
+            }
+        }
+
+        function age(){
+
+            var age = prompt('Enter your age: ');
+
+            if(age >= 18 && age < 65){
+                document.write('You are in working age');
+            }
+        }
+
+        function isPair(){
+
+            var num = prompt('Enter one number: ');
+
+            if(parseInt(num)%2==0){
+                document.write('Pair number');
+            }
+        }
+    
+    </script>
+
+
+</head>
+
+<body>
+    
+    <script>
+        //avg();
+        //email();
+        //age();
+        //isPair();
+        
+    </script>
+
+
+</body>
+</html>

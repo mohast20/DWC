@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act12</title>
+
+    <script>
+        
+
+        function area_triangle(){
+
+
+            var base, height
+            var area = 0;
+            var aux = 0;
+            
+
+            for(var i = 1; i < 4; i++){
+
+                base = prompt('Enter the base of triangle ' + i + ': ');
+                base = parseInt(base);
+
+                height = prompt('Enter the height of triangle ' + i + ': ');
+                height = parseInt(height);
+                
+                area = parseInt(area);
+                area = (base * height)/2;
+                aux = parseInt(aux);
+
+                document.write('Area triangle ' + i + ': ' + area);
+                document.write('<br>');
+
+                if(area > 12){
+
+                    aux++;
+
+                }
+
+
+            }
+
+            document.write('Bigger than 12: ' + aux + ' area: ' + area);
+
+        }
+
+        function sum_numbers(){
+
+
+            var num;
+            var sum = 0;
+
+            for(var i = 0; i < 10; i++){
+
+                num = prompt('Enter one number: ');
+                num = parseInt(num);
+                sum = parseInt(sum);
+
+                if(i >= 4){
+
+                    sum += num;
+                }
+
+
+            }
+
+            document.write('Sum: ' + sum);
+        }
+
+        function multiplication5(){
+
+            var x = 1;
+            var y = 5;
+
+            for(var i = 5; i <= 50; i+=5){
+
+
+
+                document.write(y + ' x ' + x + ' = ' + i + '<br>');
+
+                
+                
+
+                x++;
+            }
+        }
+
+        function multiplication(){
+
+            var num = prompt('Enter one number: ');
+            num = parseInt(num);
+
+            for(var i = 1; i <= 10; i++){
+
+                document.write(num + ' x ' + i + ' = ' + num*i + '<br>');
+
+            }
+        }
+
+        function type_triangle(){
+
+            var side1, side2, side3;
+            var equilateral = 0;
+            var isosceles = 0;
+            var scalene = 0;
+
+            for(var i = 0; i < 4; i++){
+
+                side1 = prompt('Enter side of triangle ' + i + ': ');
+                side1 = parseInt(side1);
+
+                side2 = prompt('Enter side of triangle ' + i + ': ');
+                side2 = parseInt(side2);
+
+                side3 = prompt('Enter side of triangle ' + i + ': ');
+                side3 = parseInt(side3);
+
+                if (side1 == side2 && side1 == side3 && side2 == side3) {
+                    document.write('The triangle ' + i + ' is equilateral.' + '<br>');
+                    equilateral++;
+                }
+
+                else if (side1 == side2 || side1 == side3 || side2 == side3) {
+                    document.write('The triangle ' + i + ' is isosceles.' + '<br>');
+                    isosceles++;
+                }
+
+                else if (side1 != side2 && side1 != side3 && side2 != side3) {
+                    document.write('The triangle ' + i + ' is scalene.' + '<br>');
+                    scalene++;
+                }
+
+                
+            }
+
+            document.write('There are ' + equilateral + ' equilateral triangles, ' + isosceles + ' isosceles triangles and ' + scalene + ' scalene triangles.' + '<br>');
+
+            if (equilateral > isosceles && equilateral > scalene) {
+
+                document.write('There are more equilateral triangles.');
+
+            }else if (isosceles > equilateral && isosceles > scalene) {
+
+                document.write('There are more isosceles triangles.');
+                
+            }else if (scalene > equilateral && scalene > isosceles) {
+                
+                document.write('There are more scalene triangles.');
+
+            }
+
+            
+
+        }
+
+        function ten_numbers(){
+
+            var num;
+            var positive = 0;
+            var negative = 0;
+            var odd = 0;
+            var sumPair = 0;
+
+
+            for(var i = 1; i <= 10; i++){
+
+                num = prompt('Enter number ' + i + ': ');
+                num = parseInt(num);
+                sumPair = parseInt(sumPair);
+
+                if (num > 0) {
+
+                    positive++;
+                
+                } else if(num < 0){
+
+                    negative++;
+
+                }if (num%2 != 0) {
+
+                    odd++;
+
+                }else if (num%2 == 0) {
+
+                    sumPair += num;
+                    
+                }
+
+            }
+
+            document.write('Positive numbers: ' + positive);
+            document.write('<br>');
+
+            document.write('Negative numbers: ' + negative);
+            document.write('<br>');
+
+            document.write('Odd numbers: ' + odd);
+            document.write('<br>');
+
+            document.write('Sum of the pair numbers: ' + sumPair);
+            document.write('<br>');
+
+        }
+
+        function avg() {
+            
+            var marks, clas;
+            var sumA = 0;
+            var sumB = 0;
+            var sumC = 0;
+            var contA = 0;
+            var contB = 0;
+            var contC = 0;
+            var avg1, avg2, avg3;
+
+
+
+            for (var i = 1; i <= 22; i++) {
+                
+                if (i <= 5) {
+
+                    clas = 'A';
+                    markA = prompt('Enter mark ' + clas);
+                    markA = parseInt(markA);
+                    sumA = parseInt(sumA);
+                    sumA += markA;
+                    contA++;
+                    
+
+                }else if (i > 5 && i <= 11) {
+                    
+                    clas = 'B';
+                    markB = prompt('Enter mark ' + clas);
+                    markB = parseInt(markB);
+                    sumB = parseInt(sumB);
+                    sumB += markB;
+                    contB++;
+
+                }else{
+
+                    clas = 'C';
+                    markC = prompt('Enter mark ' + clas);
+                    markC = parseInt(markC);
+                    sumC = parseInt(sumC);
+                    sumC += markC;
+                    contC++;
+
+                }
+
+                
+                
+                
+                
+            }
+
+            avg1 = sumA / contA;
+            avg2 = sumB / contB;
+            avg3 = sumC / contC;
+
+            document.write('Class A average: '+avg1);
+            document.write('<br>');
+            document.write('Class B average: '+avg2);
+            document.write('<br>');
+            document.write('Class C average: '+avg3);
+
+            if (avg1 > avg2 && avg1 > avg3) {
+
+                document.write('Class A has the biggest average.');
+                
+            }else if (avg2 > avg1 && avg2 > avg3) {
+
+                document.write('Class B has the biggest average.');
+
+            }else if (avg3 > avg2 && avg3 > avg2) {
+
+                document.write('Class C has the biggest average.');
+                
+            }
+
+        }
+
+        
+    
+    </script>
+</head>
+<body>
+
+    <script>
+
+        //area_triangle();
+        //sum_numbers();
+        //multiplication5();
+        //multiplication();
+        //type_triangle();
+        //ten_numbers();
+        avg();
+
+        </script>
+    
+</body>
+</html>

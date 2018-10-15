@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act06</title>
+</head>
+
+    <script>
+        
+        function isBigger(){
+
+            var num1 = prompt('Enter num1: ');
+            var num2 = prompt('Enter num2: ');
+            var result;
+
+            if(parseInt(num1)>parseInt(num2)){
+
+                result = parseInt(num1)+parseInt(num2);
+
+            }else{
+                result = parseInt(num2)-parseInt(num1);
+            }
+
+            document.write(result);
+
+        }
+
+        function avgMarks(){
+
+            
+            var mark1 = prompt('Enter mark 1: ');
+            var mark2 = prompt('Enter mark 2: ');
+            var mark3 = prompt('Enter mark 3: ');
+            var avg = (parseInt(mark1)+parseInt(mark2)+parseInt(mark3))/3;
+
+            if(avg >=5){
+                document.write('You pass!');
+                document.write('</br>');
+                document.write('Your average is: ' + avg);
+            }else{
+                document.write('You fail!');
+                document.write('</br>');
+                document.write('Your average is: ' + avg);
+            }
+        }
+
+        function isPairOrOdd(){
+
+            var num = prompt('Enter one number: ');
+
+                if(parseInt(num)%2==0){
+                    document.write('Pair number');
+                    }else{
+                        document.write('Odd number');
+                    }
+        }
+
+        function inWorkingAgeOrNot(){
+
+            var age = prompt('Enter your age: ');
+
+                if(age >= 18 && age < 65){
+                    document.write('You are in working age');
+                    
+                    }else{
+                        document.write('You are not in working age');
+
+                    }
+        }
+
+
+    </script>
+<body>
+
+
+    <script>
+        
+        //isBigger();
+        //avgMarks();
+        isPairOrOdd();
+        //inWorkingAgeOrNot();
+    
+    </script>
+
+
+
+</body>
+</html>
