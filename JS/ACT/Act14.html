@@ -54,29 +54,54 @@
 
     <script>
     
-        function Person(){
+        function Person(name, age){
 
-            this.name;
-            this.age;
+            this.name = name;
+            this.age = age;
+
+        }
+
+        function Company(c_name, top_age){
+
+            
+            this.c_name = c_name;
+            this.top_age = top_age;
 
         }
 
-        function Company(){
+        
+        var cont = 0;
 
-            this.w_name;
-            this.w_age;
+        
+        
+        var c = new Company('Informatica SA', 18);
+        var p1 = new Person('Miquel', 14);
+        var p2 = new Person('Antoni', 50);
 
-        }
+        if (p1.age >= c.top_age) {
+                
+                cont++;
+
+            }
+
+            if (p2.age >= c.top_age) {
+
+                cont++;
+                
+            }
+
+            document.write('There are ' + cont + ' people that are able to work in this company.');
+        
+
+        
+        
 
     </script>
 
 </head>
 <body>
 
-    <script>
-        
     
-    </script>
     
 </body>
 </html>
