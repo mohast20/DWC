@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act16</title>
+
+    <script>
+    
+        function calculateArray(){
+
+            var vector = new Array(8);
+            var sum = 0;
+            sum = parseInt(sum);
+            var avg = 0;
+            var sum_5 = 0;
+            sum_5 = parseInt(sum_5);
+            var cont = 0;
+            var num_5 = 0;
+
+            for(var i = 0; i < vector.length; i++){
+
+                vector[i] = prompt('Enter number ' + i + ': ');
+                //vector[i] = parseInt(vector);
+                avg = parseInt(avg);
+                
+                cont = parseInt(cont);
+                num_5 = parseInt(num_5);
+
+                sum = sum + parseInt(vector[i]);
+
+                avg = sum/(i+1);
+
+                if (vector[i] > 5) {
+                    
+                    sum_5 += parseInt(vector[i]);
+                    num_5++;
+
+
+                }
+                
+                
+            }
+
+            
+                
+
+
+
+
+            
+
+            document.write('Sum: ' + sum);
+            document.write('<br>');
+
+            document.write('Avg: ' + avg);
+            document.write('<br>');
+
+            document.write('Sum bigger than 5: ' + sum_5);
+            document.write('<br>');
+
+            document.write('Total numbers biggers than 5: ' + num_5);
+            document.write('<br>');
+
+        }
+
+
+        
+    
+    </script>
+
+</head>
+<body>
+
+    <script>
+    
+    calculateArray();
+    
+    </script>
+    
+</body>
+</html>
