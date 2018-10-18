@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,7 @@
     <title>Act16</title>
 
     <script>
-    
-        function calculateArray(){
+        function calculateArray() {
 
             var vector = new Array(8);
             var sum = 0;
@@ -19,37 +19,37 @@
             var cont = 0;
             var num_5 = 0;
 
-            for(var i = 0; i < vector.length; i++){
+            for (var i = 0; i < vector.length; i++) {
 
                 vector[i] = prompt('Enter number ' + i + ': ');
                 //vector[i] = parseInt(vector);
                 avg = parseInt(avg);
-                
+
                 cont = parseInt(cont);
                 num_5 = parseInt(num_5);
 
                 sum = sum + parseInt(vector[i]);
 
-                avg = sum/(i+1);
+                avg = sum / (i + 1);
 
                 if (vector[i] > 5) {
-                    
+
                     sum_5 += parseInt(vector[i]);
                     num_5++;
 
 
                 }
-                
-                
+
+
             }
 
-            
-                
 
 
 
 
-            
+
+
+
 
             document.write('Sum: ' + sum);
             document.write('<br>');
@@ -65,19 +65,57 @@
 
         }
 
+        function vector() {
+
+            var num;
+            var size = prompt('Enter the size of vector: ');
+            size = parseInt(size);
+            var mat = new Array(size);
+            var n2;
+
+            for (var i = 0; i < mat.length; i++) {
+
+                num = prompt('Enter num ' + i + ': ');
+                num = parseInt(num);
+
+                mat[i] = num;
+
+                
+
+                
+            }
+
+            var num1 = prompt('Enter number one: ');
+            num1 = parseInt(num1);
+            document.write('<br>');
+            //mat.unshift(num1);
+
+            var num2 = prompt('Enter number two: ');
+            num2 = parseInt(num2);
+            document.write('<br>');
+            mat.unshift(num1, num2);
+            
+            document.write(mat);
+            
+
+
+
+
+
+        }
 
         
-    
     </script>
 
 </head>
+
 <body>
 
     <script>
-    
-    calculateArray();
-    
+        //calculateArray();
+        vector();
     </script>
-    
+
 </body>
+
 </html>
