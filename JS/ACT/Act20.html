@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act20</title>
+</head>
+<body>
+
+    <script>
+        
+        function square(){
+
+            var x = document.getElementById('n').value;
+            
+            x = parseInt(x);
+
+            alert('The square number of ' + x + ' equals ' + Math.sqrt(x));
+
+        }
+
+        function biggest(){
+
+            var num1 = document.getElementById('n1').value;
+            var num2 = document.getElementById('n2').value;
+
+            if (num1 >= num2) {
+
+                alert('The biggest one is: ' + num1);
+                
+            }else{
+
+                alert('The biggest one is: ' + num2);
+            }
+
+        }
+
+        function showName(){
+
+            var x = document.getElementById('name').value;
+            var y = document.getElementById('sur1').value;
+
+            alert('Your full name is: ' + x + ' ' + y);
+        }
+    
+    </script>
+
+    <form>
+
+        Enter one number: <input type="text" id="n">
+        <br>
+        <input type="button" value="OK" onclick="square()">
+
+    </form>
+
+    <br>
+
+    <form>
+
+        Enter number one: <input type="text" id="n1">
+        <br>
+        Enter number two: <input type="text" id="n2">
+        <br>
+
+        <input type="button" value="Continue" onclick="biggest()">
+
+    </form>
+
+    <form>
+
+        Enter your name: <input type="text" id="name">
+        <br>
+        Enter your surname: <input type="text" name="" id="sur1">
+        <br>
+
+        <input type="button" value="Continue" onclick="showName()">
+
+
+    </form>
+    
+</body>
+</html>
