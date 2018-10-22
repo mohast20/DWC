@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act21</title>
+</head>
+
+<body>
+
+    <script>
+        function checkPassword(){
+
+        var a = document.getElementById('p1').value;
+        var b = document.getElementById('p2').value;
+
+        if (a == b) {
+
+            alert('The passwords are equal!');
+    
+        }else{
+
+            alert('The passwords are not equal!');
+        }
+
+        }
+    
+    </script>
+
+    <form>
+
+        Enter password1: <input type="password" id="p1">
+        <br>
+        Enter password2: <input type="password" id="p2">
+        <br>
+
+        <input type="button" value="OK" onclick="checkPassword()">
+
+
+
+    </form>
+
+</body>
+
+</html>
