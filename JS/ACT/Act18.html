@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act18</title>
+
+    <script>
+        function name() {
+
+
+
+
+
+            var cont = 0;
+            var name;
+
+            while (name != 'end') {
+
+                name = prompt('Enter one name: ');
+                cont = parseInt(cont);
+
+                cont++;
+
+            }
+
+            document.write('Cont: ' + cont);
+
+        }
+
+        function substring1() {
+
+            var s1 = 'Hello World';
+            var pos = s1.indexOf('o Wor');
+
+            if (pos == -1) {
+
+                document.write('The word is not in the text! ')
+
+            } else {
+
+                document.write('Position: ' + pos);
+            }
+
+        }
+
+        function palindrome() {
+
+            var word = 'lolololo';
+
+            var vector = word.split("");
+
+            var reversee = word.split("").reverse();
+
+            var p = false;
+
+            for (var i = 0; i < vector.length; i++) {
+
+                if (vector[i] == reversee[i]) {
+
+                    p = true;
+
+                } else {
+
+                    p = false;
+                }
+
+            }
+
+            if (p) {
+
+                document.write('Is Palindrome');
+
+            } else {
+
+                document.write('Is not Palindrome');
+            }
+
+
+        }
+
+        function email() {
+
+            var e = 'mohast19@gmail.com';
+
+            if (e.indexOf('@') != -1) {
+
+                document.write('Correct!');
+
+            } else {
+
+                alert('You have an error in your email. Try again!');
+            }
+
+        }
+
+        function substring2() {
+
+            var word = 'Good afternoon';
+            var cont = 0;
+
+
+            document.write(word.substring(0, (word.length / 2)));
+            document.write('<br>');
+
+            document.write(word.charAt(word.length - 1));
+            document.write('<br>');
+
+            var toVector = word.split("");
+            var reversee = word.split("").reverse();
+
+            document.write(reversee);
+            document.write('<br>');
+
+            document.write(toVector.join(' '));
+            
+
+            for (var i = 0; i < word.length; i++) {
+
+
+                if (word.charAt(i) == "a" || word.charAt(i) == "e" || word.charAt(i) == "i" || word.charAt(i) == "o" || word.charAt(i) == "u") {
+                    cont++;
+                }
+
+            }
+
+            document.write('<br>');
+
+            document.write('The word has ' + cont + ' vowels.');
+
+            
+
+        }
+
+        function phrase(){
+
+
+            var p = 'Hello world';
+
+            var to_vector = p.split('');
+
+            document.write(to_vector.join('<br>'));
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <script>
+        //name();
+        //substring1();
+        //palindrome();
+        //email();
+        //substring2();
+        phrase();
+    </script>
+
+</body>
+
+</html>
