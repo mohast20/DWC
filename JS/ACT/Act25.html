@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act25</title>
+</head>
+<body>
+
+    <script>
+        
+        function text_area(){
+
+            var name = document.getElementById('txt1').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('txa').value;
+
+            alert('Your name: ' + name + ', your email: ' + email + ', comments: ' + comment);
+
+        }
+    
+    </script>
+
+    <form>
+
+
+       User name: <input type="text" name="" id="txt1"> <br><br>
+       Email: <input type="text" name="" id="email"> <br><br>
+       Comments: <br> <textarea name="" id="txa" cols="30" rows="10"></textarea>
+        <br>
+       <input type="button" name="" id="" onclick="text_area()" value="Check">
+    </form>
+    
+</body>
+</html>
