@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act26</title>
+</head>
+
+<body>
+
+    <script>
+            
+
+                function empty(control){
+                    control.value='';
+                }
+
+
+                function checkEntry(control){
+                    var texts = document.getElementById("psw").value;
+
+                    if (control.value=='' || texts.length < 7 || texts.length > 20)
+
+                    alert('You must enter data!');
+                }
+    
+    </script>
+
+    <form>
+
+        Username: <input type="text" name="" id="usr" onFocus="empty(this)" onBlur="checkEntry(this)" value="user name">
+        <br>
+        Password: <input type="password" id="psw" onFocus="empty(this)" onBlur="checkEntry(this)" value="password">
+        <br>
+
+        <input type="button" id="buttn1" value="Confirm" onclick="passwordLenght()">
+    </form>
+
+</body>
+
+</html>
