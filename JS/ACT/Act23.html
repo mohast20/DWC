@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act23</title>
+</head>
+<body>
+
+    <script>
+    
+        function getSport(){
+
+            ;
+
+            if (document.getElementById('chk1').checked) {
+
+                alert('The selected sport is Football!');
+
+            }else if (document.getElementById('chk2').checked) {
+
+                alert('The selected sport is Tennis!');
+
+            }else{
+
+                alert('The selected sport is Karate!');
+
+            }
+
+
+        }
+    
+    </script>
+
+    <form>
+
+        <input type="checkbox" id="chk1">Football
+
+        <br>
+
+        <input type="checkbox" id="chk2">Tennis
+
+        <br>
+
+        <input type="checkbox" id="chk3">Karate
+        <br>
+
+        <input type="button" id="buttn" onclick="getSport()" value="Click">
+
+    </form>
+    
+</body>
+</html>
