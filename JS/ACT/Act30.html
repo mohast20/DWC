@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act30</title>
+</head>
+<body>
+
+    <script>
+        
+        function randomPage(){
+
+            var rnd = parseInt(Math.random(2)*3);
+            
+
+
+            if (rnd == 0) {
+                
+                document.getElementById('a1').href="http://www.google.es/";
+
+            }else if (rnd == 1) {
+
+                document.getElementById('a1').href="http://www.yahoo.es/";
+                
+            }else{
+
+                document.getElementById('a1').href="http://www.bing.es/";
+
+            }
+            
+
+        }
+
+        function _pop_up(){
+
+            var w_op;
+
+            var s_height = (screen.availHeight)/2;
+            var s_width = screen.availWidth;
+
+            
+
+            w_op = window.open('','','status=yes,width=1366,height=370');
+
+        }
+
+        _pop_up();
+
+        function showCookies(){
+
+            var cookies_enabled = navigator.cookieEnabled;
+
+            if (cookies_enabled) {
+
+                alert('The cookies are enabled!');
+
+            }else{
+
+                alert('The cookies are disabled!');
+            }
+
+             
+        }
+
+        showCookies();
+
+
+
+        
+    
+    </script>
+
+    <a href="" id="a1" onclick="randomPage()">Click here!</a>
+    
+</body>
+</html>
