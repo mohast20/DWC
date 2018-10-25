@@ -5,8 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Act02</title>
+    <script src="../../jquery.js"></script>
 </head>
 <body>
+
+    <script>
+        
+        var x = $(document);
+        x.ready(dColor);
+        
+        function dColor(){
+
+            var a = $('#t1');
+            var b = $('#t2');
+
+            a.click(changeColorT1);
+            b.click(changeColorT2);
+
+        }
+
+        function changeColorT1(){
+
+            var a = $('#t1');
+
+            a.css('background-color', '#ffff00');
+
+        }
+
+        function changeColorT2(){
+
+            var b = $('#t2');
+
+            b.css('background-color', '#ff0000');
+
+        }
+        
+    </script>
+
+    <style>
+        
+        td{
+            border: 1px solid black;
+
+        }
+    
+    </style>
+
+    <table>
+
+        <tr>
+            <td id="t1">1</td>
+        </tr>
+        <tr>
+            <td id="t2">2</td>
+        </tr>
+
+    </table>
     
 </body>
 </html>
