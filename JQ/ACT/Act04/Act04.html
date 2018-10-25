@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act04</title>
+    <script src="../../jquery.js"></script>
+
+</head>
+<body>
+
+    <script>
+        
+        var x = $(document);
+        x.ready(initC);
+
+        function initC(){
+            var x = $('td');
+            x.click(changeBgC);
+            
+        }
+
+        function changeBgC(){
+            var y = $('#t1 td');
+            var z = $('#t2 td');
+            y.css('background-color', '#ff0000');
+            z.css('font-size', '30px');
+            
+        }
+    
+    </script>
+
+    <style>
+        
+        table{
+
+            border: 1px solid black;
+        }
+    
+    
+    </style>
+
+    <table id="t1">
+
+        <tr>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+    </table>
+    
+    <table id="t2">
+
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+            </tr>
+            <br>
+            <tr>
+                <td>6</td>
+            </tr>
+    </table>
+    
+</body>
+</html>
