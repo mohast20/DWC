@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act03</title>
+    <script src="../../jquery.js"></script>
+
+</head>
+<body>
+
+    <script>
+        
+        var x = $(document);
+        x.ready(inith);
+
+        function inith(){
+
+            var a = $('li');
+            a.click(hideItems);
+            
+
+        }
+
+        function hideItems(){
+            var x = $(this);
+
+            x.hide(this);
+        }
+
+        
+        
+    </script>
+
+    <ul>
+
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+    </ul>
+    
+</body>
+</html>
