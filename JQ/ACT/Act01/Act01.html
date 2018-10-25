@@ -6,9 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Act</title>
 
-    <link rel="stylesheet" href="../../jquery.js">
+    <script src="../../jquery.js"></script>
 </head>
 <body>
+
+    <script>
+
+        
+        var x = $(document).ready(initEvent);
+        x.ready(initEvent);
+
+        function initEvent(){
+
+            var x;
+            x = $('#p2');
+            x.click(showMessage);
+
+
+
+
+        }
+
+        function showMessage(){
+
+
+            alert('This is paragraph 2!');
+        }
+
+        
+
+        
+        
+        
+
+
+    
+    </script>
+    
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores veritatis corrupti magni deleniti amet obcaecati reprehenderit blanditiis suscipit assumenda!</p>
+    <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, numquam?</p>
     
 </body>
 </html>
