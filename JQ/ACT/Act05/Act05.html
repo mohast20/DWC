@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act05</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <style>
+
+        p{
+
+            border: 1px solid black;
+        }
+    
+    
+    </style>
+
+    <script>
+
+        var x = $(document);
+        x.ready(initSize);
+
+        function initSize(){
+
+            var y = $('#b1');
+            var w = $('#b2');
+            var z = $('#b3');
+            y.click(changeSize_b1);
+            w.click(changeSize_b2);
+            z.click(changeSize_b3);
+
+        }
+
+        function changeSize_b1(){
+
+            var z = $('p:odd');
+            z.css('font-size', '10px');
+
+        }
+
+        function changeSize_b2(){
+
+            var z = $('p:odd');
+            z.css('font-size', '15px');
+
+        }
+
+        function changeSize_b3(){
+
+            var z = $('p:odd');
+            z.css('font-size', '20px');
+            
+
+        }
+        
+
+    </script>
+
+    <div class="container">
+
+
+        <h1>Headline1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium magni minima, inventore officia
+            odio.</p>
+        <h1>Headline2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium magni minima, inventore officia
+            odio.</p>
+        <h1>Headline3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium magni minima, inventore officia
+            odio.</p>
+        <h1>Headline4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium magni minima, inventore officia
+            odio.</p>
+        <h1>Headline5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium magni minima, inventore officia
+            odio.</p>
+
+        <button type="button" class="btn bg-primary" id="b1">Button1</button>
+        <button type="button" class="btn bg-danger" id="b2">Button2</button>
+        <button type="button" class="btn bg-success" id="b3">Button3</button>
+
+
+    </div>
+
+</body>
+
+</html>
